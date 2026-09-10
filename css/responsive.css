@@ -1,4 +1,140 @@
 /* =========================================
+   HEADER RESPONSIVE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .site-header {
+        padding: 10px 0;
+    }
+
+    .navbar {
+        width: calc(100% - 28px);
+
+        min-height: 58px;
+
+        padding: 7px 0;
+    }
+
+    .navbar-logo img {
+        width: 95px;
+    }
+
+    .navbar-menu {
+        position: absolute;
+
+        top: calc(100% + 10px);
+
+        left: 14px;
+        right: 14px;
+
+        width: auto;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 4px;
+
+        padding: 10px;
+
+        border:
+            1px solid
+            rgba(255, 255, 255, 0.8);
+
+        border-radius: 20px;
+
+        background:
+            rgba(255, 255, 255, 0.72);
+
+        backdrop-filter: blur(22px);
+        -webkit-backdrop-filter: blur(22px);
+
+        box-shadow:
+            0 20px 45px rgba(15, 23, 42, 0.12);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transform:
+            translateY(-10px);
+
+        transition:
+            opacity 0.3s ease,
+            visibility 0.3s ease,
+            transform 0.3s ease;
+    }
+
+    .navbar-menu.open {
+        opacity: 1;
+
+        visibility: visible;
+
+        transform:
+            translateY(0);
+    }
+
+    .navbar-menu .nav-link {
+        width: 100%;
+
+        padding: 13px 15px;
+
+        border-radius: 12px;
+
+        font-size: 14px;
+    }
+
+    .navbar-button {
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        width: 42px;
+        height: 42px;
+
+        padding: 8px;
+
+        border:
+            1px solid
+            rgba(255, 255, 255, 0.8);
+
+        border-radius: 12px;
+
+        background:
+            rgba(255, 255, 255, 0.7);
+
+        cursor: pointer;
+
+        box-shadow:
+            0 5px 15px rgba(15, 23, 42, 0.06);
+    }
+
+    .navbar-toggle span {
+        width: 19px;
+        height: 2px;
+
+        margin: 2.5px 0;
+
+        border-radius: 10px;
+
+        background: #0f172a;
+
+        transition:
+            transform 0.3s ease,
+            opacity 0.3s ease;
+    }
+}
+/* =========================================
    HERO RESPONSIVE
    ========================================= */
 
@@ -126,5 +262,64 @@
         right: -5px;
 
         bottom: -5px;
+    }
+}
+
+/* =========================================
+   INFORMATION RESPONSIVE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .information-section {
+        padding: 90px 0;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefit-card {
+        min-height: 270px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .information-container {
+        width: calc(100% - 28px);
+    }
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .section-heading p {
+        font-size: 14px;
+    }
+
+    .benefit-card {
+        padding: 24px;
+
+        border-radius: 22px;
+    }
+
+    .information-cta {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 22px;
+    }
+
+    .information-button {
+        width: 100%;
+
+        justify-content: center;
     }
 }
