@@ -1,0 +1,130 @@
+/* =========================================
+   HERO RESPONSIVE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        padding-top: 130px;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 700px;
+
+        margin: 0 auto;
+    }
+
+    .hero-content > p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-stats {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        min-height: 450px;
+
+        width: 100%;
+    }
+
+    .dashboard-glass {
+        width: min(600px, 90%);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: auto;
+
+        padding:
+            120px
+            0
+            70px;
+    }
+
+    .hero-container {
+        width: calc(100% - 28px);
+    }
+
+    .hero h1 {
+        font-size: 42px;
+
+        letter-spacing: -1.8px;
+    }
+
+    .hero-content > p {
+        font-size: 14px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .hero-button {
+        width: 100%;
+    }
+
+    .hero-stats {
+        gap: 25px;
+    }
+
+    .hero-stat strong {
+        font-size: 20px;
+    }
+
+    .hero-visual {
+        min-height: 390px;
+    }
+
+    .dashboard-glass {
+        width: 100%;
+
+        min-height: 330px;
+
+        padding: 16px;
+
+        border-radius: 22px;
+    }
+
+    .warehouse-preview {
+        height: 220px;
+    }
+
+    .activity-card {
+        right: -5px;
+
+        width: 145px;
+
+        padding: 10px;
+    }
+
+    .sensor-card {
+        left: -5px;
+
+        bottom: 35px;
+    }
+
+    .cloud-card {
+        right: -5px;
+
+        bottom: -5px;
+    }
+}
