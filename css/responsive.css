@@ -323,3 +323,67 @@
         justify-content: center;
     }
 }
+/* =========================================
+   PRICING RESPONSIVE
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    .pricing-grid {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+    .pricing-card-featured {
+        grid-column:
+            span 2;
+
+        max-width: 480px;
+
+        width: 100%;
+
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .pricing-section {
+        padding: 90px 0;
+    }
+
+    .pricing-container {
+        width: calc(100% - 28px);
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .pricing-card-featured {
+        grid-column: auto;
+
+        max-width: none;
+    }
+
+    .pricing-card {
+        min-height: auto;
+
+        padding: 25px;
+
+        border-radius: 23px;
+    }
+
+    .pricing-card-top p {
+        min-height: auto;
+    }
+
+    .pricing-note {
+        align-items: flex-start;
+
+        text-align: left;
+    }
+}
